@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalender | Hundehvisker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./kalender.css">
+</head>
+<body>
+    <header>
+        <div class="deskstop-nav">
+            <a href="./index.html"><img src="https://www.hundehvisker.no/wp-content/uploads/2023/12/logo-norsk-hundehvisker.png" alt="Logo Norsk Hundehvisker"></a>
+            <button id="hamburge-menu"><img id="bt-menu-mobil" width="30" height="30" src="https://www.hundehvisker.no/wp-content/uploads/2023/12/menu_FILL0_wght400_GRAD0_opsz24.svg" alt="hamburge menu"></button>
+            <nav id="menu-hundehvisker">
+                <ul>
+                    <li>
+                        <a href="./kurs.html">Kurs</a>
+                    </li>
+                    <li>
+                        <a href="#">Om oss</a>
+                    </li>
+                    <li>
+                        <a href="#">Artikler</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="kurs-kalender-display">
+            <div class="kurs-title-kalender"><h1>HVERDAGSLYDIGHET KURS</h1></div>
+            <div class="rating-kurs-kalender">
+                <div class="text-ranting-kalender">
+                    <span class="value-rating-kalender">5.0</span><span class="total-rating-kalender">/5.0 rating</span>
+                </div>
+                <div class="stars-rating-kalender">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                    </span>
+                    
+                </div>
+                
+            </div>
+            <div class="price-kurs-kalender">
+                <span class="priser-kurs-text-kalender">2500</span>
+                <span class="valuta-priser-kalender">kr</span>
+                <span class="priser-specification-kalender">Pr. hund</span>
+            </div>
+        </div>
+
+        <!-- citys container -->
+        <div class="city-container">
+            <div class="name-container">
+                <h2>OSLO</h2><span class="city-line"></span>
+            </div>
+            <div class="kurs-container-kalender">
+                <div class="kurs-template">
+                    <div class="kurs-date">16. January 2024</div>
+                    <div class="kurs-time">17:00 - 19:00</div>
+                    <a href="#" class="address-kurs">Ole Deviks vei 10, Oslo, Norge</a>
+                    <div class="location-krus">Oslo</div>
+                    <a href="#" class="bt-bestill-kurs-template">Bestill nå</a>
+                    <div class="avilable-kurs-template">
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo"></div>
+                    </div>
+                </div>
+
+                <div class="kurs-template">
+                    <div class="kurs-date">16. January 2024</div>
+                    <div class="kurs-time">17:00 - 19:00</div>
+                    <a href="#" class="address-kurs">Ole Deviks vei 10, Oslo, Norge</a>
+                    <div class="location-krus">Oslo</div>
+                    <a href="#" class="bt-bestill-kurs-template">Bestill nå</a>
+                    <div class="avilable-kurs-template">
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo"></div>
+                    </div>
+                </div>
+
+                <div style="background-color: #D0555590;" class="kurs-template">
+                    <div class="kurs-date">24. January 2024</div>
+                    <div class="kurs-time">17:00 - 19:00</div>
+                    <a href="#" class="address-kurs">Ole Deviks vei 10, Oslo, Norge</a>
+                    <div class="location-krus">Oslo</div>
+                    <div class="bt-cupo-full">
+                        Fullt
+                    </div>                    
+                    <div class="avilable-kurs-template">
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                        <div class="cupo cupo-full"></div>
+                    </div>
+                </div>
+
+            </div><!-- kurs-container-kalender -->
+        </div>
+        
+        <section id="meld-deg-nyhetsbrev">
+            <h2>Spørsmål?</h2>
+            <span>Send oss en mail!</span>
+            <button>Send mail</button>
+        </section> <!-- meld-deg-nyhetsbrev -->
+
+        <!-- reviews -->
+        <section id="tilbakemeldinger">
+            <h2>Tilbakemeldinger</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <img src="#" alt="Kunde bilde">
+                    <h3>Magnus Berglund</h3>
+                    <p class="review-text">Min erfaring med Norsk Hundehvisker har vært intet mindre enn utrolig. Hundetreningen er velstrukturert og engasjerende. Vår hund, Bella, har virkelig utviklet seg under veiledningen fra dyktige instruktører. Anbefales på det sterkeste!</p>
+                    <div class="rating-container">
+                        <p>5.0<span>/5.0 rating</span></p>
+                        <div class="stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                        </div>
+                    </div>
+                </div> <!-- review-card -->
+                <div class="review-card">
+                    <img src="#" alt="Kunde bilde">
+                    <h3>Mari Pettersen</h3>
+                    <p class="review-text">Jeg var på leting etter den perfekte hundeskolen for min energiske collie, Max. Etter å ha deltatt på kurs, kan jeg ærlig si at jeg har funnet den. Jeg har sett en betydelig forbedring i oppførselen hans. Takk for en flott opplevelse!</p>
+                    <div class="rating-container">
+                        <p>4.0<span>/5.0 rating</span></p>
+                        <div class="stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                            <svg style="opacity: 0.3;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                        </div>
+                    </div>
+                </div> <!-- review-card -->
+                <div class="review-card">
+                    <img src="#" alt="Kunde bilde">
+                    <h3>Reidun Hansen</h3>
+                    <p class="review-text">Jeg kom hit med min litt rampete valp, Bruno, som slet med en tendens til biting. Instruktørene viste en imponerende forståelse og tålmodighet. Gjennom deres veiledning og skreddersydde tilnærming, har Bruno virkelig endret adferd.</p>
+                    <div class="rating-container">
+                        <p>5.0<span>/5.0 rating</span></p>
+                        <div class="stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                        </div>
+                    </div>
+                </div> <!-- review-card -->
+            </div>
+            <div class="div-a"><a href="#">Les mer</a></div>
+            
+        </section> <!-- reviews -->
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="norsk-hundehvisker-footer">
+                <h2>Norsk Hundehvisker</h2>
+                <p>
+                    Hos Norsk Hundehvisker hjelpe vi hunder i alle raser og alle aldre.Ingen problemer er for store!
+                </p>
+            </div>
+            <div class="snarvier-footer footer-section">
+                <h3>Snarveier</h3>
+                <ul>
+                    <li> <a href="#">Kurs</a> </li>
+                    <li> <a href="#">Om oss</a> </li>
+                    <li> <a href="#">Artikler</a> </li>
+                    <li> <a href="#">FAQ</a> </li>
+                    <li> <a href="#">Kontakt</a> </li>
+                </ul>
+            </div>
+            <div class="snarvier-footer footer-section">
+                <h3>Kontakt Norsk Hundehvisker</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            hjelp@hundehvisker.no
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">Telefon: 417 32 812</a>
+                    </li>
+                </ul>
+                
+                
+                <di class="socialmedia-footer-icons">
+                    <div class="facebook-icon"><img src="https://www.hundehvisker.no/wp-content/uploads/2023/12/facebook.svg" alt="facebook icon"></div>
+                    <div class="facebook-icon"><img src="https://www.hundehvisker.no/wp-content/uploads/2023/12/instagram.svg" alt="instagram icon"></div>
+                    <div class="facebook-icon"><img src="https://www.hundehvisker.no/wp-content/uploads/2023/12/tik_tok.svg" alt="tiktok icon"></div>
+                </di>
+            </div>
+        </div>        
+        <div class="rights">
+            <span >© Norsk Hundehvisker 2023. Alle bilder og illustrasjoner på nettsider under dette domenet tilhører respektivt opphav og kan ikke benyttes og/eller kopieres uten samtykke.</span>
+        </div>
+        
+
+    </footer> 
+    <!-- footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="./script.js" type="module"></script>
+</body>
+</html>

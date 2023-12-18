@@ -1,0 +1,221 @@
+.kurs-kalender-display{
+    width: 100%;
+    max-width: 1145px;
+    min-height: 130px;
+    background-color: #182b3f;
+    color: white;
+    top: 92px;
+    margin: auto;
+    margin-top: 96px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-areas: 
+    'kursTitle priser '
+    'rating priser';
+    gap: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 35px 20px 15px 50px;
+
+}
+
+.kurs-title-kalender{
+    grid-area: kursTitle;
+    width: 100%;;
+    height: 100%; 
+}
+
+.kurs-title-kalender h1{
+    font-weight: 600;
+    font-size: 42px;
+}
+
+.rating-kurs-kalender{
+    grid-area: rating;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.stars-rating-kalender{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.price-kurs-kalender{
+    grid-area: priser;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.priser-kurs-text-kalender{
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.valuta-priser-kalender{
+    font-size: 19px;
+    color: #6892D276;
+}
+
+.priser-specification-kalender{
+    font-size: 13px;
+    opacity: 0.5;
+    display: block;
+    margin-top: -10px;
+}
+
+.total-rating-kalender{
+    color: #B9C8F3;
+    font-size: 10px;
+}
+
+/* citys */
+
+.city-container{
+    width: 100%;
+    max-width: 1145px;
+    min-height: 130px;
+    margin: auto;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.name-container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+}
+
+.name-container h2{
+    color: #557AAF;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.city-line{
+    width: 100%;
+    height: 2px;
+    background-color: #557AAF;
+    margin-top: -7px;
+    opacity: 0.3;
+}
+
+.kurs-container-kalender{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.kurs-template{
+    max-width: 350px;
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    display: grid;
+    box-shadow: 0px 0px 8px 6px #00000010;
+    grid-template-areas: 
+    'date date date date date date date location'
+    'time time time time time time time time'
+    'address address btBestil btBestil btBestil btBestil btBestil btBestil'
+    'cupo cupo btBestil btBestil btBestil btBestil btBestil btBestil';
+    margin-bottom: 15px;
+}
+
+.kurs-date{
+    grid-area: date;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.kurs-time{
+    grid-area: time;
+    font-size: 12px;
+}
+
+.address-kurs{
+    grid-area: address;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.location-kurs{
+    grid-area: location;
+    font-size: 15px;
+    color: #182B3F;
+}
+
+.avilable-kurs-template{
+    grid-area: cupo;
+    display: grid;
+    grid-template-columns: repeat(10, 14px);
+    gap: 4px;
+}
+
+.bt-bestill-kurs-template{
+    grid-area: btBestil;
+    border: none;
+    background-color: #94CD86;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display: grid;
+    align-items: center;
+}
+
+.cupo{
+    width: 14px;
+    height: 14px;
+    background-color: gainsboro;
+    border-radius: 7px;
+}
+
+.cupo-full{
+    background-color: #D05555;
+}
+
+.bt-cupo-full{
+    grid-area: btBestil;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display: grid;
+    align-items: center;
+}
+
+@media only screen and (max-width: 850px) {
+    .kurs-kalender-display{
+        grid-template-areas: 
+        'kursTitle'
+        'priser'
+        'rating'
+        ;
+        max-width: calc(100% - 40px);
+
+    }
+
+    .kurs-title-kalender h1{
+        font-size: 21px;
+        text-align: center;
+    }
+
+    .rating-kurs-kalender{
+        margin: auto;
+        text-align: center;
+        width: auto;
+    }
+}

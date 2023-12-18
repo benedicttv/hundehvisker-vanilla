@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+
+body{
+    margin: 0;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 92px;
+    background-color: #fdfdfd;
+    display: grid;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+}
+
+.deskstop-nav{
+    display: grid;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 20px;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;;
+    margin: auto;
+
+}
+
+#hamburge-menu{
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: 20px;
+    background-color: white;
+    border: none;
+    display: none;
+}
+
+nav{
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+nav ul{
+   
+    margin-top: 8px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #171D4A;
+    font-size: 17px;
+}
+
+main{
+    padding-top: 92px;
+}
+
+.hero-banner{
+    width: 100%;
+    height: 550px;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    padding: 50px;
+    display: grid;
+    align-items: center;
+    background-image: url('https://www.hundehvisker.no/wp-content/uploads/2023/12/hunder-hvisker-hero-bilder.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-banner h1,
+.hero-banner p,
+.hero-banner span {
+    color: white;
+}
+
+.hero-banner h1{
+    font-size: 47px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hero-info-container{
+    width: 100%;
+    max-width: 1045px;
+    margin: auto;
+}
+
+.hero-banner p{
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+
+.button-container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+}
+
+.bestill-krus-bt{
+    display: grid;
+    border: none;
+    grid-template-columns: auto auto;
+    align-items: center;
+    background-color: #b63e3c;
+    gap: 10px;
+    width: 172px;
+    height: 58px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    font-size: 11pt;
+    border-radius: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.les-mer-bt{
+    display: grid;
+    border: none;
+    align-items: center;
+    background-color: white;
+    gap: 10px;
+    width: 172px;
+    height: 58px;
+    box-sizing: border-box;
+    font-size: 11pt;
+    border-radius: 30px;
+    color: #b63e3c;
+    text-align: center;
+}
+
+#kurs-section{
+    width: 100%;
+    min-height: 565px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+#kurs-section h2{
+    color: #171D4A;
+    font-weight: bold;
+    font-size: 42px;
+    max-width: 1300px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.kurs-cards-container {
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    max-width: 1300px;
+    margin: auto;
+}
+
+.kurs-cards {
+    width: 310px;
+    height: 487px;
+    box-shadow: 0px 0px 10px 8px #00000010;
+    border-radius: 18px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto 1fr;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#hverdag-slydighet-kurs-card{
+    background-color: #182B3F;
+    transform: scale(1.05);
+    color: white;
+}
+
+.popular-card{
+    color: gold;
+    width: 113px;
+    height: 40px;
+    background-color: #557AAF;
+    border-radius: 7px;
+    display: grid;
+    align-items: center;
+    margin: auto;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.hidde-popular{
+    opacity: 0;
+}
+
+.kurs-cards h3{
+    font-size: 20px;
+}
+
+.priser-kurs{
+    font-size: 49px;
+    font-weight: 600;
+}
+
+.priser-kurs-color{
+    color: #182B3F;
+}
+
+.priser-kurs-span{
+    color: #557AAF;
+    font-size: 24px;
+}
+
+.px-hund{
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.5;
+    margin-top: -15px;
+}
+
+.bestill-kurs-priser{
+    border: none;
+    width: 186px;
+    height: 52px;
+    border-radius: 26px;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url('https://www.hundehvisker.no/wp-content/uploads/2023/12/flechita-azul.svg');
+    background-repeat: no-repeat;
+    background-position: right 25px center;
+}
+
+.kurs-description{
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 400;
+    color: #182B3F;
+}
+
+.description-popular{
+    color: white;
+    opacity: 0.7;
+}
+
+.popular-button-color{
+    background-color: white;
+}
+
+.button-priser-color{
+    background-color: #182B3F;
+    color: white;
+    background-image: url('https://www.hundehvisker.no/wp-content/uploads/2023/12/flechita.svg');
+    background-repeat: no-repeat;
+    background-position: right 25px center;
+}
+
+#on-norks-hundehvisker{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    color: #171D4A;
+    max-width: 1194px;
+    margin: auto;
+    gap: 0px 50px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#on-norks-hundehvisker img{
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    width: 100%;
+}
+
+#on-norks-hundehvisker h2{
+    font-size: 16px;
+    color: #171D4A;
+}
+
+#on-norks-hundehvisker h3{
+    margin: 0px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    font-size: 36px !important;
+}
+
+.name-section-container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.line-text{
+    background-color: #171D4A;
+    height: 2pt;
+    width: 37px;
+}
+
+
+#on-norks-hundehvisker h3{
+    font-size: 42px;
+}
+
+.bt-les-mer-blue{
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: #171D4A;
+    color: white;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+
+/* vare-tjenester */
+
+#vare-tjenester{
+    max-width: 1194px;
+    width: 100%;
+    margin: auto;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#vare-tjenester h2{
+    text-align: center;
+    font-size: 37px;
+    font-weight: bold;
+    color: #171D4A;
+    margin-bottom: 0px;
+}
+
+
+.tjenester-container{
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 20px;
+}
+
+.tjenester-card{
+    background-color: white;
+    box-shadow: 0px 0px 2px 4px #00000010;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.tjenester-card h3{
+    color: #171D4A;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.tjenester-card p{
+    font-size: 14px;
+}
+
+.bt-tjenester-les-mer{
+    background-color: #182B3F;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 23px;
+    height: 46px;
+    width: 172px;
+    margin-top: 40px;
+}
+
+/* meld-deg-nyhetsbrev */
+#meld-deg-nyhetsbrev{
+    width: 100%;
+    min-height: 242px;
+    padding: 40px;
+    background-color: #182B3F;
+    text-align: center;
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+
+#meld-deg-nyhetsbrev h2{
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+#meld-deg-nyhetsbrev span{
+    color: white;
+    font-weight: 700;
+    opacity: 0.76;
+}
+#meld-deg-nyhetsbrev button{
+    border: none;
+    width: 186px;
+    height: 52px; 
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 26px; 
+}
+
+#img-gallery-hundehvisker{
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin-top: 50px;
+}
+#img-gallery-hundehvisker::-webkit-scrollbar{
+    height: 0px;
+}
+
+#img-gallery-hundehvisker img{
+    padding: 10px;
+    width: 90%;
+    max-width: 600px;
+}
+
+/* tilbakemeldinger section */
+
+#tilbakemeldinger{
+    max-width: 1194px;
+    width: 100%;
+    margin: auto;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#tilbakemeldinger h2{
+    color: #171D4A;
+    font-weight: 700;
+    font-size: 42px;
+    text-align: left;
+}
+
+.div-a{
+    color: #171D4A;
+    margin-left: auto;
+    text-align: right;
+    margin-top: 15px;;
+}
+
+.div-a a{
+    color: #171D4A;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.reviews-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.review-card{
+    border-radius: 22px;
+    background-color: #182B3F;
+    display: grid;
+    grid-template-rows: 80px 40px 1fr 25px;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 100%;
+    max-width: 310px;
+    color: white;
+    gap: 10px;
+    margin: auto;
+}
+
+.review-card img{
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff10;
+    border-radius: 40px;
+    margin: auto;
+}
+
+.review-card h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.review-text{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 11px;
+    color: #B9C8f3;
+}
+
+.rating-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+}
+
+.rating-container p{
+    font-size: 22px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+.rating-container p span{
+    font-size: 14px;
+    color: #B9C8f3;
+    font-weight: 400;
+}
+
+
+/* footer */
+footer{
+    background-color: #182B3F;
+    margin-top: 50px;
+    color: white;
+    box-sizing: border-box;
+    padding-top: 80px;
+    padding-bottom: 15px;
+    
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 100px;
+    max-width: 1194px;
+    width: 100%;
+    margin: auto;
+}
+
+.norsk-hundehvisker-footer h2{
+    
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.norsk-hundehvisker-footer p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer-section{
+    width: 100%;
+    max-width: 310px;
+}
+
+.snarvier-footer h3{
+    font-size: 19px;
+}
+
+.snarvier-footer ul, .snarvier-footer li a{
+    font-size: 13px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.rights{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.socialmedia-footer-icons{
+    display: grid;
+    grid-template-columns: repeat(3,auto) 1fr;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 850px) {
+    
+    #on-norks-hundehvisker img{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        width: 100%;
+    }
+
+    #on-norks-hundehvisker{
+        grid-template-columns: 1fr;
+    }
+
+    .name-section-container{
+        margin: auto;
+    }
+
+    #tilbakemeldinger h2{
+        font-size: 29px;
+    }
+
+    .button-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .bestill-krus-bt{
+        width: 300px;
+    }
+
+    .bestill-krus-bt span{
+        margin-right: 0px;
+        margin-left: auto;
+    }
+
+    .button-container a{
+        margin: auto;
+    }
+
+    #hamburge-menu{
+        display: block;
+    }
+
+    nav{
+        display: none;
+        position: absolute;
+        background-color: white;
+        top: 90px;
+        right: 0px;
+        width: 200px;
+    }
+
+    nav ul li{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    
+  }
